@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif,Helvetica;
+    background-image: url('https://moblegends.ru/wp-content/uploads/2020/11/Selena_-_Thunder_Flash-1-scaled.jpg');
+    background-size: cover; /* Позволяет изображению занимать весь экран */
+    background-repeat: no-repeat; /* Запрещает повторять изображение */
+    background-attachment: fixed; /* Фиксирует изображение, чтобы оно не прокручивалось вместе со страницей */
+  }
+  
+  @media (max-width: 600px) {
+    body {
+      background-position: calc(40% + 20px) calc(0% + 10px);
+    }
+  }
+  
+  header {
+  
+  text-align: center;
+  font-size: 35px;
+  }
+  
+  nav {
+  float: left;
+  width: 15%;
+  background: #00fff270;
+  padding: 10px;
+  }
+  
+  nav ul {
+  list-style-type: none;
+  padding: 0;
+  }
+  
+  article {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: #193fe7a6;
+  color: rgb(16, 245, 233);
+  }
+  
+  section::after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  
+  footer {
+  background-color: rgba(122, 128, 214, 0.733);
+  margin-top: 300px;
+  padding: 10px;
+  text-align: center;
+  color: rgb(206, 203, 67);
+  font-size: 20px;
+  }
+  
+  
+  /* CSS */
+  .logo {
+    width: 40%; /*(40%) указываем процентное изображение для нормамльного вида*/
+    height: 12.6%; /* (12.6% подгоняем проценты чтобывзять */
+  }
+  @media (max-width: 600px) {
+    /* Дополнительные стили, применяемые только на устройствах с шириной экрана меньше или равной 600px */
+    .logo {
+      width: 100%; /* Ширина изображения на мобильных устройствах будет 100% ширины родительского контейнера */
+      height: auto; /* Автоматический расчет высоты для сохранения пропорций изображения */
+    }
+  }
+  
